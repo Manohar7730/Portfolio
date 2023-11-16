@@ -8,22 +8,48 @@
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
     overflow-x: auto;
     overflow-y: scroll;
     height: 100%;
 }
 
+h1{
+    font-family: 'Dancing Script', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: #FF8C00;
+}
+
 body::-webkit-scrollbar {
-    width: 1px;
+    width: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6ee1bf;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #122620;
 }
 
 @media screen and (min-width: 768px) {
+
+    /* Header CSS */
+
     .header {
         width: 100%;
         height: 70px;
         display: flex;
         justify-content: space-between;
-        font-family: 'Montserrat', sans-serif;
+        align-items: center;
         background-color: #122620;
         color: white;
         position: fixed;
@@ -53,8 +79,7 @@ body::-webkit-scrollbar {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .horizontal-list li {
@@ -72,18 +97,22 @@ body::-webkit-scrollbar {
         transition: 1s ease;
     }
 
+    /* Sectional CSS */
+
     section {
         width: 100%;
         height: 75vh;
     }
 
     section:nth-child(2n) {
-        background-color: #9e9b9b29;
+        background-color: #f4f4f4;
     }
 
     section:nth-child(2n + 1) {
         background-color: white;
     }
+
+    /* Home CSS */
 
     #home {
         padding-top: 70px;
@@ -99,6 +128,7 @@ body::-webkit-scrollbar {
         background-size: cover;
         background-position: center;
         height: 75vh;
+        text-align: center;
     }
 
     .image {
@@ -115,46 +145,49 @@ body::-webkit-scrollbar {
         box-shadow: inset;
     }
 
-    /* Add the following CSS to your style.css file */
+    /* About CSS */
 
     #about {
-        background-color: #f4f4f4; /* Light background color */
-        padding: 50px; /* Add padding for better spacing */
+        background-color: #f4f4f4;
+        padding: 50px;
         height: auto;
-      }
+    }
 
-      #about p {
-        font-size: 30px;
+    #about p {
+        font-size: 26px;
         line-height: 1.6;
         color: #555;
         margin-bottom: 10px;
-      }
+    }
 
-      #about p::first-letter{
+    #about p::first-letter {
         color: orangered;
         font-size: 1.8em;
-        margin-left: 20%;
-      }
-      
-      #skills {
+        margin-left: 15%;
+    }
+
+    /* Skills CSS */
+
+    #skills,
+    #education,
+    #experience {
         height: auto;
         padding: 40px;
         margin-bottom: 30px;
-        font-family: 'Montserrat', sans-serif;
     }
-    
+
     #skills h2 {
         font-size: 2em;
         color: #333;
         margin-bottom: 20px;
     }
-    
+
     .skills-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    
+
     .skill-tile {
         background-color: #fff;
         border: 1px solid #ddd;
@@ -164,16 +197,143 @@ body::-webkit-scrollbar {
         width: 250px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    
+
     .skill-tile h3 {
         font-size: 1.2em;
         color: #333;
         margin-bottom: 10px;
     }
-    
+
     .skill-tile p {
         font-size: 16px;
         color: #555;
         margin-bottom: 10px;
     }
+
+    /* Education CSS */
+
+    #education,
+    #experience {
+        padding: 40px 150px;
+    }
+
+    #education h2,
+    #experience h2 {
+        margin-left: -100px;
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .event {
+        display: flex;
+        margin: 20px 0;
+    }
+
+    .university-image {
+        height: 80px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .university-image img {
+        height: 100%;
+    }
+
+    .event-details {
+        flex: 1;
+    }
+
+    .event-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .course-name {
+        font-size: 1.2em;
+        color: #333;
+    }
+
+    .courseSchool {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .courseSchool span {
+        display: inline-block;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .courseSchool span img {
+        height: 100%;
+    }
+
+    .courseCompletion {
+        font-size: 0.9em;
+        color: #888;
+        margin-bottom: 10px;
+    }
+
+    .aboutStudy ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .aboutStudy ul li {
+        font-size: 0.9em;
+        color: #666;
+    }
+
+    /* Experience CSS */
+
+    .allCompanies {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .company-image {
+        width: 30%;
+    }
+
+    .company-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .role {
+        font-size: 1.5em;
+        color: #333;
+    }
+
+    .companytitle {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .companytime {
+        font-size: 0.9em;
+        color: #888;
+        margin-bottom: 10px;
+    }
+
+    .about ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .about ul li {
+        font-size: 0.9em;
+        color: #666;
+    }
+
+    .company:nth-child(even) {
+        flex-direction: row-reverse;
+        direction: rtl;
+    }
+
 }
