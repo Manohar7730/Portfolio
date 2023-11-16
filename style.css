@@ -14,13 +14,13 @@ body {
     height: 100%;
 }
 
-h1{
+h1 {
     font-family: 'Dancing Script', cursive;
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: white;
     transition: color 0.5s ease;
 }
 
@@ -334,6 +334,32 @@ body::-webkit-scrollbar-track {
     .company:nth-child(even) {
         flex-direction: row-reverse;
         direction: rtl;
+    }
+
+    /* footer css */
+
+    #contact {
+        width: 100%;
+        padding: 30px 10%;
+        background-color: #4a4a4a;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+
+    }
+
+    .section-child{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-child {
+        width: 50%;
+        text-transform: capitalize;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        color: white;
     }
 
 }
