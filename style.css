@@ -40,411 +40,598 @@ body::-webkit-scrollbar-track {
     background-color: #122620;
 }
 
-@media screen and (min-width: 768px) {
 
-    /* Header CSS */
+/* Header CSS */
 
-    .header {
-        width: 100%;
-        height: 70px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #122620;
-        color: white;
-        position: fixed;
-        text-transform: capitalize;
-        z-index: 100;
-    }
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #122620;
+    color: white;
+    position: fixed;
+    text-transform: capitalize;
+    z-index: 100;
+}
 
-    .logo {
-        width: 10%;
-        display: flex;
-        height: 100%;
-        justify-content: space-around;
-        align-items: center;
-    }
+.logo {
+    width: 10%;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
 
-    .logo a {
-        height: 100%;
-    }
+.logo a {
+    height: 100%;
+}
 
-    #logoimg {
-        height: 100%;
+#logoimg {
+    height: 100%;
+}
+
+
+.bars {
+    margin: 0;
+    display: none;
+}
+
+.bars i {
+    font-size: 1.5rem;
+}
+
+.dropdown-list {
+    margin: 0;
+    display: none;
+    position: absolute;
+    right: 3%;
+    background-color: #122620;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul {
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+    list-style-type: none;
+}
+
+.dropdown-menu:hover .dropdown-list {
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li {
+    margin: 0.4rem 0px;
+}
+
+.bars:focus+.dropdown-list,
+.dropdown-list:focus {
+    display: block;
+}
+
+.horizontal-list {
+    height: 70px;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+.horizontal-list li {
+    margin: 0 10px;
+}
+
+.horizontal-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.horizontal-list li a:hover {
+    text-decoration: none;
+    color: orange;
+    transition: 1s ease;
+}
+
+/* Sectional CSS */
+
+section {
+    width: 100%;
+    height: 75vh;
+}
+
+section:nth-child(2n) {
+    background-color: #f4f4f4;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+/* Home CSS */
+
+#home {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 600;
+    background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    text-align: center;
+}
+
+.image {
+    border-radius: 50%;
+    width: 25%;
+    overflow: hidden;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: inset;
+}
+
+/* About CSS */
+
+#about {
+    background-color: #f4f4f4;
+    padding: 70px 50px;
+    height: auto;
+}
+
+#about p {
+    font-size: 26px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#about p::first-letter {
+    color: orangered;
+    font-size: 1.8em;
+    margin-left: 15%;
+}
+
+/* Skills CSS */
+
+#skills,
+#education,
+#experience {
+    height: auto;
+    padding: 70px 50px;
+    margin-bottom: 30px;
+}
+
+#skills h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-tile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-tile h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skill-tile p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Education CSS */
+
+#education h2,
+#experience h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.event {
+    display: flex;
+    margin: 20px 0;
+}
+
+.university-image {
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.university-image img {
+    height: 100%;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.course-name {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.courseSchool {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.courseSchool span {
+    display: inline-block;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.courseSchool span img {
+    height: 100%;
+}
+
+.courseCompletion {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.aboutStudy ul {
+    list-style-type: none;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.aboutStudy ul li {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Experience CSS */
+
+.allCompanies {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-image {
+    width: 30%;
+}
+
+.company-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.role {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.companytitle {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.companytime {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.company:nth-child(even) {
+    flex-direction: row-reverse;
+    direction: rtl;
+}
+
+/* Projects CSS */
+
+#projects {
+    height: auto;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+#projects h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.projects-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -20px;
+}
+
+.project-tile {
+    flex: 0 0 47%;
+    margin: 15px;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-tile:hover {
+    box-shadow: 0 4px 8px rgba(255, 69, 0, 0.7);
+}
+
+.project-tile .preview {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.project-tile .preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-tile .about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.80);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: black;
+    padding: 10px;
+}
+
+.project-tile:hover .about {
+    opacity: 1;
+}
+
+.project-tile .about h3 {
+    font-size: 1.8em;
+}
+
+.project-tile .about p {
+    display: none;
+}
+
+.project-tile:hover .about p {
+    display: inline-block;
+}
+
+
+/* footer css */
+
+#contact {
+    width: 100%;
+    padding: 30px 10%;
+    background-color: #4a4a4a;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+}
+
+.section-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .footer-child a {
+    font-size: 16px;
+}
+
+.footer-child {
+    width: 50%;
+    text-transform: capitalize;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
     }
 
     .horizontal-list {
-        height: 70px;
-        width: 100%;
-        list-style-type: none;
-        display: flex;
-        align-items: center;
+        display: none;
+    }
+
+    .header {
         justify-content: space-around;
-        font-size: 18px;
+        height: 50px;
     }
 
-    .horizontal-list li {
-        margin: 0 10px;
+    .bars:focus+.dropdown-list,
+    .dropdown-list:focus {
+        display: block;
     }
 
-    .horizontal-list li a {
-        text-decoration: none;
-        color: white;
+    .bars {
+        display: block;
     }
 
-    .horizontal-list li a:hover {
-        text-decoration: none;
-        color: orange;
-        transition: 1s ease;
+    nav {
+        position: relative;
+        right: -12%;
     }
-
-    /* Sectional CSS */
-
-    section {
-        width: 100%;
-        height: 75vh;
-    }
-
-    section:nth-child(2n) {
-        background-color: #f4f4f4;
-    }
-
-    section:nth-child(2n + 1) {
-        background-color: white;
-    }
-
-    /* Home CSS */
 
     #home {
-        padding-top: 70px;
+        flex-direction: column;
+    }
+
+    .social-icons {
+        display: block;
+        bottom: 25%;
+        position: fixed;
+        background-color: #122620;
+        height: 50%;
+        left: 0;
+        width: 50px;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-family: 'Dancing Script', cursive;
-        text-transform: capitalize;
-        font-size: 50px;
-        font-weight: 600;
-        background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 75vh;
-        text-align: center;
+        flex-direction: column;
+        border-radius: 0px 10px 10px 0px;
+        padding: 3px;
     }
 
     .image {
-        border-radius: 50%;
-        width: 25%;
+        position: relative;
+        border-radius: 50% 0% 0% 50%;
+        right: -30%;
+        height: auto;
+        width: 40%;
         overflow: hidden;
+        box-shadow: 0px 2px 20px 6px #036a81;
     }
 
     .image img {
         height: 100%;
-        width: 100%;
+        width: 110%;
+        filter: drop-shadow(1.5em 10px 1.2em #036a81);
         object-fit: cover;
-        border-radius: 50%;
-        box-shadow: inset;
-    }
-
-    /* About CSS */
-
-    #about {
-        background-color: #f4f4f4;
-        padding: 50px;
-        height: auto;
     }
 
     #about p {
-        font-size: 26px;
-        line-height: 1.6;
-        color: #555;
-        margin-bottom: 10px;
-    }
-
-    #about p::first-letter {
-        color: orangered;
-        font-size: 1.8em;
-        margin-left: 15%;
-    }
-
-    /* Skills CSS */
-
-    #skills,
-    #education,
-    #experience {
-        height: auto;
-        padding: 40px;
-        margin-bottom: 30px;
-    }
-
-    #skills h2 {
-        font-size: 2em;
-        color: #333;
-        margin-bottom: 20px;
-    }
-
-    .skills-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .skill-tile {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 20px;
-        margin: 10px;
-        width: 250px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .skill-tile h3 {
         font-size: 1.2em;
-        color: #333;
-        margin-bottom: 10px;
-    }
-
-    .skill-tile p {
-        font-size: 16px;
+        line-height: 1.5;
         color: #555;
         margin-bottom: 10px;
-    }
-
-    /* Education CSS */
-
-    #education,
-    #experience {
-        padding: 40px 150px;
-    }
-
-    #education h2,
-    #experience h2 {
-        margin-left: -100px;
-        font-size: 2em;
-        color: #333;
-        margin-bottom: 20px;
-    }
-
-    .event {
-        display: flex;
-        margin: 20px 0;
-    }
-
-    .university-image {
-        height: 80px;
-        overflow: hidden;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-
-    .university-image img {
-        height: 100%;
-    }
-
-    .event-details {
-        flex: 1;
     }
 
     .event-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        align-items: normal;
         margin-bottom: 10px;
     }
 
-    .course-name {
-        font-size: 1.2em;
-        color: #333;
-    }
-
-    .courseSchool {
-        font-size: 0.9em;
-        color: #555;
-    }
-
-    .courseSchool span {
-        display: inline-block;
-        height: 80px;
-        overflow: hidden;
-        border-radius: 50%;
+    .university-image {
+        height: 55px;
     }
 
     .courseSchool span img {
-        height: 100%;
-    }
-
-    .courseCompletion {
-        margin-top: 10px;
-        font-size: 0.9em;
-        color: #888;
-    }
-
-    .aboutStudy ul {
-        list-style-type: none;
-        line-height: 1.5;
-        padding: 0;
-    }
-
-    .aboutStudy ul li {
-        font-size: 0.9em;
-        color: #666;
-    }
-
-    /* Experience CSS */
-
-    .allCompanies {
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
 
     .company-image {
-        width: 30%;
-    }
-
-    .company-image img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .role {
-        font-size: 1.5em;
-        color: #333;
+        width: 50%;
     }
 
     .companytitle {
-        font-size: 0.9em;
-        color: #555;
-    }
-
-    .companytime {
-        font-size: 0.9em;
-        color: #888;
-        margin-bottom: 10px;
+        font-size: 1.1em;
     }
 
     .about ul {
-        list-style-type: none;
-        padding: 0;
+        padding: 5px;
     }
 
     .about ul li {
-        font-size: 0.9em;
-        color: #666;
+        font-size: 1.05em;
     }
-
-    .company:nth-child(even) {
-        flex-direction: row-reverse;
-        direction: rtl;
-    }
-
-    /* Projects CSS */
 
     #projects {
-        height: auto;
-        padding: 40px;
-        margin-bottom: 30px;
-    }
-
-    #projects h2 {
-        font-size: 2em;
-        color: #333;
-        margin-bottom: 20px;
+        padding-left: 50px;
     }
 
     .projects-tiles {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: -20px;
-    }
-
-    .project-tile {
-        flex: 0 0 47%;
-        margin: 15px;
-        text-decoration: none;
-        color: inherit;
-        border: 2px solid #ddd;
-        border-radius: 10px;
-        height: auto;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .project-tile:hover {
-        box-shadow: 0 4px 8px rgba(255, 69, 0, 0.7);
-    }
-
-    .project-tile .preview {
-        width: 100%;
-        overflow: hidden;
-        height: 100%;
+        margin: -10px;
+        flex-direction: column;
     }
 
     .project-tile .preview img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
+    }
+
+
+    .project-tile {
+        flex: 0 0 100%;
+        margin: 10px;
     }
 
     .project-tile .about {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.80);
+        position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        opacity: 0;
-        transition: opacity 0.3s;
         color: black;
         padding: 10px;
-    }
-
-    .project-tile:hover .about {
         opacity: 1;
     }
 
-    .project-tile .about h3 {
-        font-size: 1.8em;
-    }
-
     .project-tile .about p {
-        display: none;
+        display: block;
     }
-
-    .project-tile:hover .about p {
-        display: inline-block;
-    }
-
-
-    /* footer css */
 
     #contact {
-        width: 100%;
-        padding: 30px 10%;
-        background-color: #4a4a4a;
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-
+        padding: 30px 0px 30px 50px;
     }
 
     .section-child {
-        display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .footer-child {
-        width: 50%;
-        text-transform: capitalize;
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        color: white;
+        width: 90%;
     }
-
 }

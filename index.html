@@ -12,6 +12,7 @@
     <title>Manohar Portfolio</title>
   </head>
   <body>
+    <!-- Header Section -->
     <header class="header">
       <div class="logo">
         <a href="#">
@@ -19,6 +20,25 @@
         </a>
       </div>
       <nav>
+        <div class="dropdown-menu">
+          <div style="color: white" class="bars" tabindex="0">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="dropdown-list">
+            <ul>
+              <!-- Navigation Links -->
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#skills">skills</a></li>
+              <li><a href="#education">education</a></li>
+              <li><a href="#experience">experience</a></li>
+              <li><a href="#projects">projects</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Horizontal Navigation Links -->
         <ul class="horizontal-list">
           <li><a href="#home">home</a></li>
           <li><a href="#about">about</a></li>
@@ -30,11 +50,16 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Main Content -->
     <main>
+      <!-- Home Section -->
       <section id="home">
         <div class="details">
           <h1 style="color: white">pediredla manohar</h1>
-          <ul class="horizontal-list" style="font-size: 25px">
+
+          <!-- Social Icons -->
+          <ul class="horizontal-list social-icons" style="font-size: 25px">
             <li>
               <a
                 href="https://www.linkedin.com/in/manohar-pediredla-21feb2000/"
@@ -63,10 +88,14 @@
             </li>
           </ul>
         </div>
+
+        <!-- Image -->
         <div class="image">
           <img src="person.jpg" alt="myImage" />
         </div>
       </section>
+
+      <!-- About Section -->
       <section id="about">
         <p>
           Web Developer with a passion for web application development.
@@ -76,9 +105,12 @@
           facilitating early adoption of innovations.
         </p>
       </section>
+
+      <!-- Skills Section -->
       <section id="skills">
         <h2>Technical Skills</h2>
         <div class="skills-container">
+          <!-- Skill Tiles -->
           <div class="skill-tile">
             <h3>HTML/CSS</h3>
             <p>
@@ -109,9 +141,11 @@
         </div>
       </section>
 
+      <!-- Education Section -->
       <section id="education">
         <h2>Education</h2>
         <div class="timeline">
+          <!-- Education Events -->
           <div class="event" data-date="Apr 2015">
             <div class="university-image">
               <img src="images/universities/apSSC.png" alt="APSSC" />
@@ -131,6 +165,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Education Event -->
           <div class="event" data-date="Jul 2015 - Apr 2018">
             <div class="university-image">
               <img src="images/universities/apSBTET.jpg" alt="APSBTET" />
@@ -148,14 +184,16 @@
                   </div>
                 </div>
                 <div class="courseSchool">
+                  <p>M.R.A.G.R. govt. Polytechnic College</p>
                   <span
                     ><img src="images/institutes/MRAGR.jpg" alt="MRAGR"
                   /></span>
-                  M.R.A.G.R. govt. Polytechnic College
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- Education Event -->
           <div class="event" data-date="Jul 2018 - Aug 2021">
             <div class="university-image">
               <img src="images/universities/JNTUK.png" alt="JNTUK" />
@@ -187,9 +225,11 @@
         </div>
       </section>
 
+      <!-- Experience Section -->
       <section id="experience">
         <h2>Experience</h2>
         <div class="allCompanies">
+          <!-- Company Details -->
           <div class="company">
             <div class="company-image">
               <img src="./images/companies/axisbank.jpg" alt="axisbank" />
@@ -225,10 +265,14 @@
           </div>
         </div>
       </section>
+
+      <!-- Projects Section -->
       <section id="projects">
         <h2>Projects</h2>
-        <!-- Todo-list Project -->
+
+        <!-- Project Cards -->
         <div class="projects-tiles">
+          <!-- Todo-list Project -->
           <a
             href="https://manohar7730.github.io/Todo_list/"
             class="project-tile"
@@ -237,7 +281,7 @@
             <div class="preview">
               <img
                 src="images/projectPreview/todoList.png"
-                alt="TODO-LIST_Preview"
+                alt="Todo-list Project Preview"
               />
             </div>
             <div class="about">
@@ -256,7 +300,10 @@
             target="_blank"
           >
             <div class="preview">
-              <img src="images/projectPreview/IMDBClone.png" alt="IMDB-Clone" />
+              <img
+                src="images/projectPreview/IMDBClone.png"
+                alt="IMDB-Clone Project Preview"
+              />
             </div>
             <div class="about">
               <h3>IMDB-Clone</h3>
@@ -277,7 +324,7 @@
             <div class="preview">
               <img
                 src="images/projectPreview/csvFileViewer.png"
-                alt="csvFileViewer"
+                alt="CSV File Viewer Project Preview"
               />
             </div>
             <div class="about">
@@ -293,6 +340,7 @@
         </div>
       </section>
 
+      <!-- Footer Section -->
       <footer id="contact">
         <div class="section-child">
           <div class="footer-child">
@@ -307,6 +355,7 @@
             </ul>
           </div>
           <div class="footer-child">
+            <!-- Contact Section -->
             <h3>Contact</h3>
             <ul class="footer-child">
               <li>
@@ -368,6 +417,9 @@
             </ul>
           </div>
         </div>
+        <p style="font-size: xx-small">
+          &copy; 2023 Manohar Portfolio. All rights reserved
+        </p>
       </footer>
     </main>
   </body>
