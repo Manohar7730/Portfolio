@@ -1,0 +1,102 @@
+{
+  "skills": [
+    {
+      "title": "Java",
+      "description": "Proficiency in Java programming language, covering basic Java, loops, arrays, recursion, strings, and patterns."
+    },
+    {
+      "title": "Object-Oriented Programming (OOPs) with Java",
+      "description": "Strong command of Object-Oriented Programming principles in Java, facilitating the development of scalable and modular software solutions."
+    },
+    {
+      "title": "HTML/CSS",
+      "description": "Proficiency in creating and styling web pages using HTML and CSS."
+    },
+    {
+      "title": "JavaScript",
+      "description": "Strong understanding of JavaScript for creating interactive and dynamic web content."
+    },
+    {
+      "title": "Responsive Design",
+      "description": "Ability to design websites that work well on various devices and screen sizes."
+    },
+    {
+      "title": "Version Control/Git",
+      "description": "Knowledge of version control systems like Git for tracking changes in code."
+    },
+    {
+      "title": "Bootstrap",
+      "description": "Proficient in using Bootstrap, a popular front-end framework, to create responsive and visually appealing web pages efficiently."
+    },
+    {
+      "title": "React",
+      "description": "Familiarity with React, a JavaScript library for building user interfaces. Competence in developing modern and efficient single-page applications using React components."
+    }
+  ],
+  "educationEvents": [
+    {
+      "date": "Apr 2015",
+      "image": "images/universities/apSSC.png",
+      "name": "School Secondary Course (SSC / Xth)",
+      "completion": "Apr 2015",
+      "studyDetails": ["Completed with 8.5 CGPA"],
+      "school": "Kumar's Public School"
+    },
+    {
+      "date": "Jul 2015 - Apr 2018",
+      "image": "images/universities/apSBTET.jpg",
+      "name": "Diploma",
+      "completion": "Jul 2015 - Apr 2018",
+      "studyDetails": ["In Civil Engineering course.", "Completed with 65%"],
+      "school": "M.R.A.G.R. govt. Polytechnic College",
+      "schoolImage": "images/institutes/MRAGR.jpg"
+    },
+    {
+      "date": "Jul 2018 - Aug 2021",
+      "image": "images/universities/JNTUK.png",
+      "name": "Bachelors of Technology (B.Tech)",
+      "completion": "Jul 2018 - Aug 2021",
+      "studyDetails": [
+        "In Civil Engineering course.",
+        "From J.N.T.U. of Kakinada",
+        "Completed with 7.22 CGPA"
+      ],
+      "school": "Visakha Technical Campus",
+      "schoolImage": "images/institutes/Visakha Technical Campus.jpg"
+    }
+  ],
+  "companiesData": [
+    {
+      "image": "./images/companies/axisbank.jpg",
+      "role": "Junior Relationship Officer",
+      "companyTitle": "Axis Bank (Payroll on Quess corp ltd.)",
+      "companyTime": "Jan 2022 - Mar 2023",
+      "about": [
+        "Provided excellent customer service in the car loan sector, collaborating with a team.",
+        "Assisted customers with loan inquiries and financial transactions.",
+        "Maintained accurate records and documentation for loan applications.",
+        "Resolved customer concerns and ensured their satisfaction."
+      ]
+    }
+  ],
+  "projectsData": [
+    {
+      "href": "https://manohar7730.github.io/Todo_list/",
+      "previewSrc": "images/projectPreview/todoList.png",
+      "title": "Todo-list",
+      "description": "Implemented essential features like adding, deleting, and monitoring tasks for an enhanced task management experience."
+    },
+    {
+      "href": "https://manohar7730.github.io/IMDB-Clone/",
+      "previewSrc": "images/projectPreview/IMDBClone.png",
+      "title": "IMDB-Clone",
+      "description": "Developed a movie information website and ensured seamless accessibility across various devices by applying responsive design principles."
+    },
+    {
+      "href": "https://manohar7730.github.io/HTML--CSS--JS/weatherApp/",
+      "previewSrc": "images/projectPreview/weatherApp.png",
+      "title": "Weather Insight App",
+      "description": "Providing real-time updates on temperature, humidity, and wind speed. The intuitive and visually appealing interface ensures a seamless user experience for staying informed about weather conditions."
+    }
+  ]
+}

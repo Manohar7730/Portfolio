@@ -8,108 +8,123 @@
       src="https://kit.fontawesome.com/d2d263dc81.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="shortcut icon" href="manoharIcon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Manohar Portfolio</title>
   </head>
+
   <body>
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="logo">
-        <a href="#">
-          <img src="manoharIcon.ico" alt="manoharIcon" id="logoimg" />
+        <a href="/" aria-label="Home">
+          <img src="manoharIcon.jpg" alt="manoharIcon" id="logoImg" />
         </a>
       </div>
-      <nav>
+      <nav role="navigation">
+        <!-- Dropdown Menu -->
         <div class="dropdown-menu">
-          <div style="color: white" class="bars" tabindex="0">
+          <div
+            style="color: white"
+            class="bars"
+            tabindex="0"
+            aria-label="Toggle Navigation"
+          >
             <i class="fas fa-bars"></i>
           </div>
           <div class="dropdown-list">
             <ul>
               <!-- Navigation Links -->
-              <li><a href="#home">home</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#skills">skills</a></li>
-              <li><a href="#education">education</a></li>
-              <li><a href="#experience">experience</a></li>
-              <li><a href="#projects">projects</a></li>
-              <li><a href="#contact">contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
 
         <!-- Horizontal Navigation Links -->
-        <ul class="horizontal-list">
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#skills">skills</a></li>
-          <li><a href="#education">education</a></li>
-          <li><a href="#experience">experience</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#contact">contact</a></li>
+        <ul class="horizontal-list" role="navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main role="main">
       <!-- Home Section -->
       <section id="home">
         <div class="details">
-          <h1 style="color: white">pediredla manohar</h1>
+          <h1 style="color: white">Pediredla Manohar</h1>
 
           <!-- Social Icons -->
-          <ul class="horizontal-list social-icons" style="font-size: 25px">
+          <ul class="horizontal-list social-icons" aria-label="Social Links">
             <li>
               <a
                 href="https://www.linkedin.com/in/manohar-pediredla-21feb2000/"
                 target="_blank"
+                aria-label="LinkedIn"
               >
-                <i class="fa-brands fa-linkedin"></i
-              ></a>
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              </a>
             </li>
             <li>
-              <a href="https://github.com/Manohar7730" target="_blank">
-                <i class="fa-brands fa-github"></i
-              ></a>
+              <a
+                href="https://github.com/Manohar7730"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
             </li>
             <li>
               <a
                 href="https://youtube.com/@manoharpediredla8764?feature=shared"
                 target="_blank"
+                aria-label="YouTube"
               >
-                <i class="fa-brands fa-youtube"></i
-              ></a>
-            </li>
-            <li>
-              <a href="mailto:manohar20century@gmail.com" target="_blank">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
               </a>
             </li>
             <li>
-              <a href="tel:7989655205" target="_blank">
-                <i class="fa-solid fa-phone"></i>
+              <a
+                href="mailto:manohar20century@gmail.com"
+                target="_blank"
+                aria-label="Email"
+              >
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="tel:7989655205" target="_blank" aria-label="Phone">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
           <a
-            style="
-              background-color: white;
-              color: black;
-              font-family: sans-serif;
-              border-radius: 50px;
-              padding: 5px;
-              font-size: 15px;
-            "
+            class="resume-link"
             href="Pediredla's Resume (1).pdf"
             download="Manohar_Pediredla_Resume.pdf"
+            aria-label="Download Resume"
             >Download Resume</a
           >
         </div>
 
         <!-- Image -->
-        <div class="image">
-          <img src="person.jpg" alt="myImage" />
+        <div class="image" aria-hidden="true">
+          <img src="person.jpg" alt="My Image" />
         </div>
       </section>
 
@@ -118,7 +133,7 @@
         <p>
           Web Developer with a passion for web application development.
           Passionate about creating engaging and responsive web applications to
-          deliver exceptional user experiences.Dedicated to driving innovation
+          deliver exceptional user experiences. Dedicated to driving innovation
           with the ability to follow industry and technological trends, and
           facilitating early adoption of innovations.
         </p>
@@ -127,196 +142,19 @@
       <!-- Skills Section -->
       <section id="skills">
         <h2>Technical Skills</h2>
-        <div class="skills-container">
-          <!-- Skill Tiles -->
-          <div class="skill-tile">
-            <h3>Java</h3>
-            <p>
-              Proficiency in Java programming language, covering basic Java,
-              loops, arrays, recursion, strings, and patterns.
-            </p>
-          </div>
-
-          <div class="skill-tile">
-            <h3>Object-Oriented Programming (OOPs) with Java</h3>
-            <p>
-              Strong command of Object-Oriented Programming principles in Java,
-              facilitating the development of scalable and modular software
-              solutions.
-            </p>
-          </div>
-
-          <div class="skill-tile">
-            <h3>HTML/CSS</h3>
-            <p>
-              Proficiency in creating and styling web pages using HTML and CSS.
-            </p>
-          </div>
-
-          <div class="skill-tile">
-            <h3>JavaScript</h3>
-            <p>
-              Strong understanding of JavaScript for creating interactive and
-              dynamic web content.
-            </p>
-          </div>
-
-          <div class="skill-tile">
-            <h3>Responsive Design</h3>
-            <p>
-              Ability to design websites that work well on various devices and
-              screen sizes.
-            </p>
-          </div>
-
-          <div class="skill-tile">
-            <h3>Version Control/Git</h3>
-            <p>
-              Knowledge of version control systems like Git for tracking changes
-              in code.
-            </p>
-          </div>
-          <div class="skill-tile">
-            <h3>Bootstrap</h3>
-            <p>
-              Proficient in using Bootstrap, a popular front-end framework, to
-              create responsive and visually appealing web pages efficiently.
-            </p>
-          </div>
-          <div class="skill-tile">
-            <h3>React</h3>
-            <p>
-              Familiarity with React, a JavaScript library for building user
-              interfaces. Competence in developing modern and efficient
-              single-page applications using React components.
-            </p>
-          </div>
-        </div>
+        <div class="skills-container"></div>
       </section>
 
       <!-- Education Section -->
       <section id="education">
         <h2>Education</h2>
-        <div class="timeline">
-          <!-- Education Events -->
-          <div class="event" data-date="Apr 2015">
-            <div class="university-image">
-              <img src="images/universities/apSSC.png" alt="APSSC" />
-            </div>
-            <div class="event-details">
-              <div class="event-header">
-                <div class="course-name">
-                  School Secondary Course (SSC / Xth)
-                  <div class="courseCompletion">Apr 2015</div>
-                  <div class="aboutStudy">
-                    <ul>
-                      <li>Completed with 8.5 CGPA</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="courseSchool">Kumar's Public School</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Education Event -->
-          <div class="event" data-date="Jul 2015 - Apr 2018">
-            <div class="university-image">
-              <img src="images/universities/apSBTET.jpg" alt="APSBTET" />
-            </div>
-            <div class="event-details">
-              <div class="event-header">
-                <div class="course-name">
-                  Diploma
-                  <div class="courseCompletion">Jul 2015 - Apr 2018</div>
-                  <div class="aboutStudy">
-                    <ul>
-                      <li>In Civil Engineering course.</li>
-                      <li>Completed with 65%</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="courseSchool">
-                  <p>M.R.A.G.R. govt. Polytechnic College</p>
-                  <span
-                    ><img src="images/institutes/MRAGR.jpg" alt="MRAGR"
-                  /></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Education Event -->
-          <div class="event" data-date="Jul 2018 - Aug 2021">
-            <div class="university-image">
-              <img src="images/universities/JNTUK.png" alt="JNTUK" />
-            </div>
-            <div class="event-details">
-              <div class="event-header">
-                <div class="course-name">
-                  Bachelors of Technology (B.Tech)
-                  <div class="courseCompletion">Jul 2018 - Aug 2021</div>
-                  <div class="aboutStudy">
-                    <ul>
-                      <li>In Civil Engineering course.</li>
-                      <li>From J.N.T.U. of Kakinada</li>
-                      <li>Completed with 7.22 CGPA</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="courseSchool">
-                  <span
-                    ><img
-                      src="images/institutes/Visakha Technical Campus.jpg"
-                      alt="VTEC"
-                  /></span>
-                  Visakha Technical Campus
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="timeline"></div>
       </section>
 
       <!-- Experience Section -->
       <section id="experience">
         <h2>Experience</h2>
-        <div class="allCompanies">
-          <!-- Company Details -->
-          <div class="company">
-            <div class="company-image">
-              <img src="./images/companies/axisbank.jpg" alt="axisbank" />
-            </div>
-            <div class="aboutcompany">
-              <div class="role">
-                <span>Junior Relationship Officer</span>
-              </div>
-              <div class="companytitle">
-                Axis Bank (Payroll on Quess corp ltd.)
-              </div>
-              <div class="companytime">Jan 2022 - Mar 2023</div>
-              <div class="about">
-                <ul>
-                  <li>
-                    Provided excellent customer service in the car loan sector,
-                    collaborating with a team.
-                  </li>
-                  <li>
-                    Assisted customers with loan inquiries and financial
-                    transactions.
-                  </li>
-                  <li>
-                    Maintained accurate records and documentation for loan
-                    applications.
-                  </li>
-                  <li>
-                    Resolved customer concerns and ensured their satisfaction.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="allCompanies"></div>
       </section>
 
       <!-- Projects Section -->
@@ -324,73 +162,7 @@
         <h2>Projects</h2>
 
         <!-- Project Cards -->
-        <div class="projects-tiles">
-          <!-- Todo-list Project -->
-          <a
-            href="https://manohar7730.github.io/Todo_list/"
-            class="project-tile"
-            target="_blank"
-          >
-            <div class="preview">
-              <img
-                src="images/projectPreview/todoList.png"
-                alt="Todo-list Project Preview"
-              />
-            </div>
-            <div class="about">
-              <h3>Todo-list</h3>
-              <p>
-                Implemented essential features like adding, deleting, and
-                monitoring tasks for an enhanced task management experience.
-              </p>
-            </div>
-          </a>
-
-          <!-- IMDB-Clone Project -->
-          <a
-            href="https://manohar7730.github.io/IMDB-Clone/"
-            class="project-tile"
-            target="_blank"
-          >
-            <div class="preview">
-              <img
-                src="images/projectPreview/IMDBClone.png"
-                alt="IMDB-Clone Project Preview"
-              />
-            </div>
-            <div class="about">
-              <h3>IMDB-Clone</h3>
-              <p>
-                Developed a movie information website and ensured seamless
-                accessibility across various devices by applying responsive
-                design principles.
-              </p>
-            </div>
-          </a>
-
-          <!-- Weather Insight App -->
-          <a
-            href="https://manohar7730.github.io/HTML--CSS--JS/weatherApp/"
-            class="project-tile"
-            target="_blank"
-          >
-            <div class="preview">
-              <img
-                src="images/projectPreview/weatherApp.png"
-                alt="Weather Insight App Preview"
-              />
-            </div>
-            <div class="about">
-              <h3>Weather Insight App</h3>
-              <p>
-                Providing real-time updates on temperature, humidity, and wind
-                speed. The intuitive and visually appealing interface ensures a
-                seamless user experience for staying informed about weather
-                conditions.
-              </p>
-            </div>
-          </a>
-        </div>
+        <div class="projects-tiles"></div>
       </section>
 
       <!-- Footer Section -->
@@ -398,19 +170,19 @@
         <div class="section-child">
           <div class="footer-child">
             <h3>Quick Links</h3>
-            <ul class="footer-child">
-              <li><a href="#home">home</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#skills">skills</a></li>
-              <li><a href="#education">education</a></li>
-              <li><a href="#experience">experience</a></li>
-              <li><a href="#projects">projects</a></li>
+            <ul role="navigation" aria-label="Quick Links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
             </ul>
           </div>
           <div class="footer-child">
             <!-- Contact Section -->
             <h3>Contact</h3>
-            <ul class="footer-child">
+            <ul class="footer-child" aria-label="Contact Information">
               <li>
                 <a
                   href="https://www.google.com/maps?q=Visakhapatnam, Andhra Pradesh, India - 530024"
@@ -419,16 +191,11 @@
                   Visakhapatnam, Andhra Pradesh, India - 530024
                 </a>
               </li>
+              <li><a href="tel:7989655205">+91 7989655205</a></li>
               <li>
-                <a href="tel:+917989655205">+91 7989655205</a>
-              </li>
-              <li>
-                <a href="tel:+917730858581">+91 7730858581</a>
-              </li>
-              <li style="text-transform: lowercase">
-                <a href="mailto:manohar20century@gmail.com" target="_blank">
-                  manohar20century@gmail.com
-                </a>
+                <a href="mailto:manohar20century@gmail.com"
+                  >manohar20century@gmail.com</a
+                >
               </li>
             </ul>
           </div>
@@ -437,12 +204,10 @@
             <a
               href="Pediredla's Resume (1).pdf"
               download="Manohar_Pediredla_Resume.pdf"
+              class="resume-link"
               >Download PDF</a
             >
-            <ul
-              class="horizontal-list"
-              style="justify-content: space-between; font-size: 30px"
-            >
+            <ul class="horizontal-list social-icons">
               <li>
                 <a
                   href="https://www.linkedin.com/in/manohar-pediredla-21feb2000/"
@@ -482,5 +247,7 @@
         </p>
       </footer>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
