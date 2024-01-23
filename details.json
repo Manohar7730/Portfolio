@@ -97,6 +97,12 @@
       "previewSrc": "images/projectPreview/weatherApp.png",
       "title": "Weather Insight App",
       "description": "Providing real-time updates on temperature, humidity, and wind speed. The intuitive and visually appealing interface ensures a seamless user experience for staying informed about weather conditions."
+    },
+    {
+      "href": "https://manohar7730.github.io/IPOD/",
+      "previewSrc": "images/projectPreview/Ipod.png",
+      "title": "React IPOD App",
+      "description": "The React iPod App is a nostalgic music player, recreating the classic iPod interface with a responsive touch interface, rotating click wheel, and customizable themes using React."
     }
   ]
 }
