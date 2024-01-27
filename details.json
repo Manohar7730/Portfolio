@@ -17,6 +17,10 @@
       "description": "Strong understanding of JavaScript for creating interactive and dynamic web content."
     },
     {
+      "title": "Bootstrap",
+      "description": "Skilled in Bootstrap for efficient web development, creating modern interfaces with a responsive grid system and pre-built components."
+    },
+    {
       "title": "Responsive Design",
       "description": "Ability to design websites that work well on various devices and screen sizes."
     },
@@ -47,7 +51,7 @@
       "image": "images/universities/apSBTET.jpg",
       "name": "Diploma",
       "completion": "Jul 2015 - Apr 2018",
-      "studyDetails": ["In Civil Engineering course.", "Completed with 65%"],
+      "studyDetails": ["In Civil Engineering course.", "Completed with 68.59%"],
       "school": "M.R.A.G.R. govt. Polytechnic College",
       "schoolImage": "images/institutes/MRAGR.jpg"
     },
@@ -55,7 +59,7 @@
       "date": "Jul 2018 - Aug 2021",
       "image": "images/universities/JNTUK.png",
       "name": "Bachelors of Technology (B.Tech)",
-      "completion": "Jul 2018 - Aug 2021",
+      "completion": "Jul 2018 - Jul 2021",
       "studyDetails": [
         "In Civil Engineering course.",
         "From J.N.T.U. of Kakinada",
@@ -93,7 +97,7 @@
       "description": "Developed a movie information website and ensured seamless accessibility across various devices by applying responsive design principles."
     },
     {
-      "href": "https://manohar7730.github.io/HTML--CSS--JS/weatherApp/",
+      "href": "https://weather-app-2102.netlify.app/",
       "previewSrc": "images/projectPreview/weatherApp.png",
       "title": "Weather Insight App",
       "description": "Providing real-time updates on temperature, humidity, and wind speed. The intuitive and visually appealing interface ensures a seamless user experience for staying informed about weather conditions."
@@ -103,6 +107,24 @@
       "previewSrc": "images/projectPreview/Ipod.png",
       "title": "React IPOD App",
       "description": "The React iPod App is a nostalgic music player, recreating the classic iPod interface with a responsive touch interface, rotating click wheel, and customizable themes using React."
+    },
+    {
+      "href": "https://blackjack-game-2102.netlify.app/",
+      "previewSrc": "images/projectPreview/BlackJackGame.png",
+      "title": "BlackJack Game",
+      "description": "In this game, players aim to achieve a card sum close to 21 without exceeding it, with dynamic player statistics and restrictions on the maximum number of games allowed."
+    },
+    {
+      "href": "https://add-to-cart-mobile-app-2102.netlify.app/",
+      "previewSrc": "images/projectPreview/AddToCartMobileApp.png",
+      "title": "Add-To-Cart Mobile App",
+      "description": "The Firebase Realtime Shopping List is a web app using Firebase Database for dynamic item addition and removal, providing real-time updates and collaborative management."
+    },
+    {
+      "href": "https://github.com/Manohar7730/LeadsTracker-ChromeExtension",
+      "previewSrc": "images/projectPreview/Chrome-Extension.png",
+      "title": "Leads Tracker Chrome Extension",
+      "description": "This JavaScript code serves as a concise bookmark management extension, capturing and storing the current tab URL on button click. It displays clickable bookmarks and allows users to clear all with a double-click."
     }
   ]
 }

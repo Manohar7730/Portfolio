@@ -404,12 +404,12 @@ section:nth-child(2n + 1) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: -20px;
+  margin: -10px;
 }
 
 .project-tile {
-  flex: 0 0 47%;
-  margin: 15px;
+  flex: 0 0 30%;
+  margin: 10px;
   text-decoration: none;
   color: inherit;
   border: 2px solid #ddd;
@@ -417,6 +417,7 @@ section:nth-child(2n + 1) {
   height: auto;
   overflow: hidden;
   position: relative;
+  transition: box-shadow 0.3s ease;
 }
 
 .project-tile:hover {
@@ -457,11 +458,12 @@ section:nth-child(2n + 1) {
 }
 
 .project-tile .about h3 {
-  font-size: 1.8em;
+  font-size: 1.3em;
 }
 
 .project-tile .about p {
   display: none;
+  font-size: 0.9em;
 }
 
 .project-tile:hover .about p {
