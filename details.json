@@ -125,6 +125,12 @@
       "previewSrc": "images/projectPreview/Chrome-Extension.png",
       "title": "Leads Tracker Chrome Extension",
       "description": "This JavaScript code serves as a concise bookmark management extension, capturing and storing the current tab URL on button click. It displays clickable bookmarks and allows users to clear all with a double-click."
+    },
+    {
+      "href": "https://vaultvista.netlify.app/",
+      "previewSrc": "images/projectPreview/VaultVista.png",
+      "title": "Vault Vista Expense Tracker",
+      "description": "Empowering financial management with login, register, income, expense tracking, and transaction history features. Built with React, Firebase, Bootstrap, Styled-components, and Vite-React."
     }
   ]
 }
